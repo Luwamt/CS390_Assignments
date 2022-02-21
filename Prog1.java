@@ -1,0 +1,14 @@
+package w1l2.CS390_Assignments;
+
+public class Prog1 {
+
+	public static void main(String[] args) {
+	
+        int x= RandomNumbers.getRandomInt(1, 9);
+        int y = RandomNumbers.getRandomInt(3, 14);
+        
+        System.out.println(Math.pow(Math.PI, x));
+        System.out.println(Math.pow(Math.PI, y));
+	}
+
+}

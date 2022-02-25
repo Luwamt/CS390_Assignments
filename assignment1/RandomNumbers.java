@@ -1,6 +1,6 @@
-package w1l2.CS390_Assignments;
+package w1l2.CS390_Assignments.assignment1;
 
-import java.util.*;
+import java.util.Random;
 
 /**
  *  This class keeps hold of an instance of Random and guarantees

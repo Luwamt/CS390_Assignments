@@ -1,4 +1,4 @@
-package w1l2.CS390_Assignments;
+package w1l2.CS390_Assignments.assignment1;
 
 public class Prog2 {
 

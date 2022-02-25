@@ -41,16 +41,11 @@ public class HeartRates {
     }
     public int personAge(LocalDate dob) {
         LocalDate date = LocalDate.now();
+        return  Period.between(dob,date).getYears();
         //int year = dob.getYear();
-        return  Period.between(dob,date).getYears(); //year - birth.getYear();
+        // year - birth.getYear();
     }
-    /*public Period personAge(LocalDate givenBirthDate){
-        LocalDate now = LocalDate.now();
-        int year = now.getYear();
-        return Period.between(b, now);
-        *//*public Period calculateAge(){
-            LocalDate  today = LocalDate.now();
-            return Period.between(givenBirthDate, today);*/
+
     public int maxHeartRate(){
 
         return 220- personAge(birth);
@@ -72,4 +67,10 @@ public class HeartRates {
 
 }
 
-
+ /*public Period personAge(LocalDate givenBirthDate){
+        LocalDate now = LocalDate.now();
+        int year = now.getYear();
+        return Period.between(b, now);
+        *//*public Period calculateAge(){
+            LocalDate  today = LocalDate.now();
+            return Period.between(givenBirthDate, today);*/

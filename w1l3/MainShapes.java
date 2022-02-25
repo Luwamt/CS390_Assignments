@@ -56,7 +56,7 @@ public class MainShapes {
 
     public static void exit(){
         System.out.println("Thank you for using our service");
-        System.out.println("You have a good day");
+        System.out.println("You have a good day!");
         System.exit(0);
     }
     }

@@ -1,10 +1,12 @@
-package w1l2.CS390_Assignments.w1l3;
+package w1l2.CS390_Assignments.w1l3.question1;
+
+import w1l2.CS390_Assignments.w1l3.question1.Address;
 
 public class Customer {
     private String firstName;
     private String lastName;
     private String socSecurityNum;
-    private Address  billingAddress;
+    private Address billingAddress;
     private Address  shippingAddress;
 
     public Customer(String firstName, String lastName, String socSecurityNum) {

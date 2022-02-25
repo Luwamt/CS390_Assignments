@@ -1,4 +1,4 @@
-package w1l2.CS390_Assignments.w1l3;
+package w1l2.CS390_Assignments.w1l3.question2;
 
 import java.time.LocalDate;
 import java.time.Period;

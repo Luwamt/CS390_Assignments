@@ -1,4 +1,4 @@
-package w1l2.CS390_Assignments.w1l3;
+package w1l2.CS390_Assignments.w1l3.question3;
 
 final public class Triangle {
     private double base;

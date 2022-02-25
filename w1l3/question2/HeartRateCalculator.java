@@ -1,4 +1,4 @@
-package w1l2.CS390_Assignments.w1l3.question1;
+package w1l2.CS390_Assignments.w1l3.question2;
 
 import w1l2.CS390_Assignments.w1l3.question2.HeartRates;
 

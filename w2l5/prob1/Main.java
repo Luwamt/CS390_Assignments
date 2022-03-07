@@ -17,11 +17,18 @@ public class Main {
     public static void print(Shape[] shapes){
         double perimeter =0;
         double area = 0;
+        int count=0;
+        double average=0;
         for (Shape s: shapes) {
             perimeter+=s.calculatePerimeter();
            area+=s.calcualteArea();
+           count++;
         }
+        average = area/ shapes.length;
+       double average2 = area/ count;
         System.out.println("The total area of shapes: "+area) ;
+        System.out.println(average);
+        System.out.println("The average 2: "+average2);
        System.out.println("The total perimeter of shapes: " +perimeter);
 
     }

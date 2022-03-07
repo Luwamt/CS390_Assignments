@@ -15,9 +15,9 @@ public class BinarySearch {
         if(arr[midV] == target){
             return midV;
         }else if (arr[midV] < target) {
-            return binarySearch(arr, target, midV +1, uprnum);
+            return binarySearch(arr, target, lownum +1, uprnum);
         }else
-            return  binarySearch(arr, target, midV - 1, lownum);
+            return  binarySearch(arr, target, lownum - 1, uprnum);
 
     }
 

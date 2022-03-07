@@ -21,9 +21,13 @@ public class CustomerTester {
         Hana.setShippingAddress(ad3);
 
         Customer[] customers={lwam, mercy, Hana};
-        for (Customer ans : customers){
+       /* for (Customer ans : customers){
             if (ans.getBillingAddress().getCity().equalsIgnoreCase("Chicago") )
             System.out.println(ans);
+        }*/
+        for (Customer ans2 : customers){
+            if (ans2.getFirstName().equalsIgnoreCase("hana") )
+                System.out.println(ans2);
         }
     }
 }

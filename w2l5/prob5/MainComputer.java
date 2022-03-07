@@ -8,7 +8,7 @@ public class MainComputer {
         Computer  dell = new Computer("Dell","core i5,",32,1089);
         Computer  mac = new Computer("Mac","core i3,",8,1038);
 
-        System.out.println(hp.equals(hp2));
+        System.out.println(hp.equals(hp));
         System.out.println(dell.equals(mac));
         System.out.println("++++++++++++++++++++++++++++");
         dell =hp2;

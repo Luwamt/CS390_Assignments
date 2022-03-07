@@ -1,7 +1,7 @@
 package w1l2.CS390_Assignments.w1l3.question3;
 
  final public class Circle {
-     private double radius;
+     private final double radius;
 
      public Circle(double radius) {
          this.radius = radius;

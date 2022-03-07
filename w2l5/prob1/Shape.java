@@ -8,10 +8,12 @@ public class Shape {
  }
 
  public double calcualteArea(){
+
      return 0.0;
  }
 
     public double calculatePerimeter(){
-        return 0.0;
+
+     return 0.0;
     }
 }

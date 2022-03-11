@@ -34,32 +34,37 @@ public class MyPersonList {
 
 	// 3. Find the Person object using lastname
 	public boolean find(String lastName) {
-		if(lastName==null|| lastName.equals(""))
-			return  false;
-		for (int i = 0; i < lastName.length(); i++) {
+		if (lastName == null || lastName.equals(" "))
+			return false;
+		for (int i = 0; i < size(); i++) {
 			if (PersonArray[i].getLast().equals(lastName)) {
 				return true;
-			}else return false;
+			}
 		}
-		return true;
+		return false;
 	}
- 
   	// 4. Remove the person object by passing its lastname
 	public boolean remove(String lastName) {
-		if(size==0 || lastName.equals("") || lastName==null) return false;
-
-		int index =0;
+		boolean isremove = false;
+		if (size == 0 || lastName.equals("") || lastName == null)
+			return false;
+		int index = 0;
 		for (int i = 0; i < size; i++) {
 			if (PersonArray[i].getLast().equals(lastName)) {
 				index = i;
-				return  true;
+				isremove = true;
 			}
-		}if (index==-1) return false;
-
-		for (int j = index ; j < size; j++) {
-			 PersonArray[j] = PersonArray[j+1];
 		}
-		size--;
+		if (isremove) {
+
+			for (int j = index; j < size; j++) {
+				PersonArray[j] = PersonArray[j + 1];
+			}
+			size--;
+		}/*else{
+			return false;
+			//System.out.println("No such element found");
+		}*/
 		return false;
 	}
   	// 5. Resizing the list
@@ -89,10 +94,12 @@ public class MyPersonList {
 		list.add(new Person("Joe", "Lermon", 53));
 		list.add(new Person("Anne", "Dow", 55));
 		System.out.println("\nSize() : " + list.size() + "\n" + list);
+
 		list.remove("Mohanraj");
+		list.remove("Anne");
 		System.out.println("\nSize() : " + list.size() + "\n" + list);
 		//list.insert(new Person("Arun", "Jetlie", 32), 2);
-		System.out.println("\nSearching of Lermon: " + list.find("Paul"));
+		System.out.println("\nSearching of Lermon LastName: " + list.find("Joe"));
 		System.out.println("\nSearching not in the list: " + list.find("Pauliiui"));
 		System.out.println(list.get(2));
 		//System.out.println(list.find("Lermon"));

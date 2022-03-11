@@ -38,7 +38,7 @@ public class MainMarketing {
         System.out.println("Check the equality: "+market5.equals(market6));
 
 
-        System.out.println("+++++++++++++++++++The names paid greater 1000 before sorting:+++++++++++++++++++++++++ ");
+        System.out.println("++++++++++++++++++List of names more than 1000 sales amount  before Sorting+++++++++++++++++++++++++ ");
         List<Marketing> ans= listMoreThan1000(list);
         for (Marketing result : ans) {
             System.out.println(result);

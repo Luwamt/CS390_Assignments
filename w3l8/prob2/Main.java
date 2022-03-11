@@ -19,21 +19,35 @@ public class Main {
 		teachers.add(new Teacher("Rabelais", 130000, 5500));
 		teachers.add(new Teacher("Phil", 135000, 12000));
 		teachers.add(new Teacher("Tony",95000, 8000));
-		
-		
+
 		//Implementation steps
 		//Step 1: implement the combine method, to combine the two lists
-		List/*<specify type>*/ combined = combine(staff, teachers);
-		
+		List<EmployeeData> combined = combine(staff, teachers);
+		for (EmployeeData result: combined) {
+			System.out.println(result);
+		}
+		System.out.println("+++++++++++++++++++++++++++++");
 		//Step 2: pass the combined list to computeSumOfSalaries
 		double salarySum = Statistics.computeSumOfSalaries(combined);
-		System.out.println(salarySum);
+		System.out.println("The sum of salaries for staffs and teachers are: "+salarySum);
 		
 	}
 	
 	//IMPLEMENT
-	public static List/*<specify type>*/ combine(List<Staff> staff, List<Teacher> teachers) {
-		return new ArrayList/*<specify type>*/();
+	public static List<EmployeeData> combine(List<Staff> staff, List<Teacher> teachers) {
+		List<EmployeeData> comined = new ArrayList<>();
+		if (staff == null || teachers == null) return null;
+			/*for (EmployeeData r : staff) {
+				//if (s != null)
+					comined.add(r);
+			}*/
+			comined.addAll(0, staff);
+			comined.addAll(staff.size(),teachers);
+			/*for (EmployeeData s : teachers) {
+				if (s != null)
+					comined.add(s);
+			}*/
+			return new ArrayList<EmployeeData>(comined);
 	}
 
 }
